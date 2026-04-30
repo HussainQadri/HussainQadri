@@ -43,7 +43,4 @@ I keep project notes, implementation writeups, and side quests on my site:
 
 **[hussainqadri.github.io](https://hussainqadri.github.io/)**
 
-Recent topics include building a FIX dictionary validator, improving pitch
-detection for the Rabab tuner, walking through EncodeEd, and refining my Neovim
-setup.
 
