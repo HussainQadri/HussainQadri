@@ -12,7 +12,7 @@ the underlying idea properly.
 A C++20 implementation of a small FIX engine, starting from the wire format and
 building upward. It currently parses FIX 4.2 messages, validates body length and
 checksum fields, loads the XML dictionary with `pugixml`, resolves tag and enum
-metadata, and wraps several admin messages in typed classes.
+metadata, and wraps several admin messages in typed classes. Right now, this is the current project I am mainly placing focus on. It's very much still in the early stages.
 
 The next layer is session behaviour: sequence numbers, logon/logout state,
 heartbeats, resend flow, persistence, and transport.
