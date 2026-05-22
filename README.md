@@ -27,20 +27,19 @@ I started with FFT-based detection, then moved toward a YIN-style pitch pipeline
 after running into the usual problems with harmonics, noisy recordings, and the
 strongest spectral peak not always being the fundamental frequency.
 
-### [EncodeEd](https://github.com/HussainQadri/EncodeEd)
+### [Sift](https://github.com/HussainQadri/sift)
 
-My A-level Computer Science project: a Python/PyQt5 desktop app for exploring
-lossless compression algorithms. It implements RLE, Huffman Coding,
-Shannon-Fano, LZW, Arithmetic Coding, and LZ77 with visual explanations and
-runtime plots.
+A Rust CLI prototype for semantic code search. It uses Tree-sitter to extract
+functions from source files, embeds the full function source, and ranks results
+against natural-language queries with cosine similarity.
 
-The point was not to make a production compressor. It was to make the mechanics
-of each algorithm visible.
+The current version searches one file at a time and prints matching function
+headers. The next step is improving ranking with code-aware signals before
+moving toward a persisted index.
 
 ## Writing
 
 I keep project notes, implementation writeups, and side quests on my site:
 
 **[hussainqadri.github.io](https://hussainqadri.github.io/)**
-
 
