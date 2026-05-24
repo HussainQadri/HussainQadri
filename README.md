@@ -29,17 +29,17 @@ strongest spectral peak not always being the fundamental frequency.
 
 ### [Sift](https://github.com/HussainQadri/sift)
 
-A Rust CLI prototype for semantic code search. It uses Tree-sitter to extract
-functions from source files, embeds the full function source, and ranks results
-against natural-language queries with cosine similarity.
+A Rust semantic code search engine built around Tree-sitter and vector retrieval.
+It ingests source directories, extracts function-level records with source
+locations, embeds full function bodies using a code-oriented model, and searches
+a persisted local index from natural-language queries.
 
-The current version searches one file at a time and prints matching function
-headers. The next step is improving ranking with code-aware signals before
-moving toward a persisted index.
+The current search path uses exact cosine similarity as a correctness baseline.
+I am working toward a custom HNSW approximate nearest-neighbour index, with
+latency and recall benchmarks against exhaustive search for large codebases.
 
 ## Writing
 
 I keep project notes, implementation writeups, and side quests on my site:
 
 **[hussainqadri.github.io](https://hussainqadri.github.io/)**
-
